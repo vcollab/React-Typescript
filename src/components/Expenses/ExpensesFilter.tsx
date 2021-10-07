@@ -7,8 +7,8 @@ const useStyle = makeStyles({
     color: "red",
   },
 });
-const ExpensesFilter = (props : any) => {
-  const dropdownchangeHandler = (event : any) => {
+const ExpensesFilter = (props: any) => {
+  const dropdownchangeHandler = (event: any) => {
     props.onChangeFilter(event.target.value);
   };
   const classes = useStyle();

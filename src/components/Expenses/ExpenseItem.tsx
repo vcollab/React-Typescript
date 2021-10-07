@@ -3,7 +3,14 @@ import "./ExpenseItem.css";
 import Card from "../UI/Card";
 import ExpenseDate from "./ExpenseDate";
 
-const ExpenseItem = (props: any) => {
+interface Props {
+  date:any;
+  title:string;
+  amount:number;
+
+}
+
+const ExpenseItem = (props: Props) => {
   return (
     <li>
     <Card className="expense-item">
